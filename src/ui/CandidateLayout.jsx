@@ -17,6 +17,7 @@ const CandidateLayout = () => {
       <div className="flex h-14 items-center justify-between border-b bg-white px-4">
         <button className="md:hidden" onClick={() => setOpen(true)}><RiMenuLine /></button>
         <p className="text-sm font-semibold">Candidat</p>
+        <Link to="/admin/dashboard" className="rounded-lg bg-indigo-600 px-3 py-2 text-sm font-medium text-white hover:bg-indigo-700">Aller à l’admin</Link>
       </div>
       <div className="flex h-[calc(100vh-56px)]">
         <aside className={`fixed inset-y-0 left-0 z-20 w-64 transform bg-white p-4 shadow md:static md:translate-x-0 ${open ? 'translate-x-0' : '-translate-x-full'}`}>
